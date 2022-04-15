@@ -9,8 +9,22 @@ body {
    background-color: aqua;
 }
 
-/*aplicar estilos por id*/
+/*aplicar estilos por id con numeral*/
 #idsection{
     background-color: blueviolet;
 }
+#nav {
+    background: beige;
+}
+/*aplicar estilos por clase con punto*/
+.links {
+    color: green;
+}
+/*selectlr de etiqueta*/
+a {
+    text-decoration: none;
+}
 
+#linkActive {
+    color: burlywood;
+}
