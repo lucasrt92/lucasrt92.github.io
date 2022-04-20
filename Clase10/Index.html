@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*pseudo clses, no es .clase */
+        a:visited {
+            color: aquamarine;
+            
+        }
+        /*pasamos el mouse por arriba*/
+        a:hover {
+            color: blueviolet;
+            font-size: 20px;
+            text-decoration: line-through;
+        }
+
+        a:active {
+            color:green;
+            text-transform: uppercase;
+        }
+        /*nth-child(n)*/
+        div p:nth-child(1) {
+            color: red;
+            font-size: 2em;
+        }
+        div p:nth-child(odd) {
+            color:blueviolet;
+        }
+
+        table {
+            border: 1px solid red;
+        }
+        table tr:nth-child(odd) {
+            color:white;
+            background-color: yellow;
+        }
+        table tr:nth-child(even) {
+            color:brown;
+        }
+        table tr.titulos {
+            background-color: blue;
+        }
+        table tr.registros {
+            background-color: blue;
+        }
+        table th:nth-child(1) {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>titulo de la pagina</h1>
+        <section>
+            <p>Texto 1</p>
+            <a href="http://www.google.com.ar">Ir a google</a>
+            <a href="http://www.twitter.com.ar">Ir a twitter</a>
+            <a href="http://www.twitter.com.ar">Ir a Facebook</a>
+            <a href="pseudoelementos.html">Selector por atributos</a>
+            <a href="selectorporatr.html">Selector por atributos</a>
+        </section>
+        <section>
+            <div>
+                <p>texto 1</p>
+                <p>texto 2</p>
+                <p>texto 3</p>
+                <p>texto 4</p>
+                <p>texto 5</p>
+            </div>
+
+            <table>
+                <tr class="titulos">
+                    <th>ID</th>
+                    <th>NOMBRE</th>
+                    <th>PRECIOS</th>
+                </tr>
+                <tr class="registros">
+                    <td>123123123123</td>
+                    <td>PELICULA1</td>
+                    <td>$435363</td>
+                </tr>
+                <tr>
+                    <td>12123</td>
+                    <td>PELICULA2</td>
+                    <td>$435363000000</td>
+                </tr>
+                <tr>
+                    <td>123123123123</td>
+                    <td>PELICULA1</td>
+                    <td>$435363</td>
+                </tr>
+                <tr>
+                    <td>12123</td>
+                    <td>PELICULA2</td>
+                    <td>$435363000000</td>
+                </tr>
+                <tr>
+                    <td>123123123123</td>
+                    <td>PELICULA1</td>
+                    <td>$435363</td>
+                </tr>
+                <tr>
+                    <td>12123</td>
+                    <td>PELICULA2</td>
+                    <td>$435363000000</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

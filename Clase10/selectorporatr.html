@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        [href] {
+                background-color: violet;
+                text-decoration: none;
+            }
+        [href="nosotros.html"] {
+               background-color: yellow;
+        }
+        [href^="c"] {
+               background-color: aqua;
+        }
+        [href*="s"] {
+            background-color: black;
+        }
+        [href$="s"] {
+            background-color: pink;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        img[alt="s1"] {
+            border: 2px solid salmon;
+        }
+        img[alt="s2"] {
+            border: 4px solid rgb(71, 29, 24);
+        }
+        .imagenes2 img[alt="s1"]:hover {
+            border: 2px solid #1fb94d;
+            border-radius: 50%;
+        }
+        
+        .imagenes2 img[alt="s2"]:hover {
+            border: 2px solid #1fb94d;
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <milink href="">hola</link>-->
+        <nav>
+            <li>
+                <a href="Index.html">Home<a></a>
+            </li>
+            <li>
+                <a href="nosotros.html">Nosotros<a></a>
+            </li>
+            <li>
+                <a href="contacto.html">Contacto<a></a>
+            </li>
+            <li>
+                <a href="imagenes.html">Imagenes<a></a>
+            </li>
+            <li>
+                <a href="emails">Imagenes<a></a>
+            </li>
+        </nav>
+    </header>
+    <section>
+        <div class="imagenes">
+            <img src="../clase9/lossimpsons.webp" alt="s1">
+            <img src="../clase7/logo.jpg"alt="s2">
+        </div>
+        <div class="imagenes2">
+            <img src="../clase9/lossimpsons.webp" alt="s1">
+            <img src="../clase7/logo.jpg"alt="s2">
+        </div> 
+    </section>
+</body>
+</html>
