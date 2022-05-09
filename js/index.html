@@ -7,28 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <script src="Copiar-pegar.js"></script>
 </head>
 <body>
   <h1 class="titulo">código secreto</h1>
 
   <main class="main">
-    <section>
-    <textarea name="info-extra" id="" cols="50" rows="5" required placeholder="Debe ingresar un texto válido para traducir"></textarea>       
-    <br>
-    <input class="btn" type="button" value="Encriptar" id="btn-encriptar">
-    <input class="btn" type="button" value="Desencriptar" id="btn-desencriptar">
+    <section class="form box">
+      <form action="">
+        <textarea class="text-input" type="text" name="input-texto" id="input-texto" cols="50" rows="5" required placeholder="Debe ingresar un texto válido para traducir"></textarea>       
+        <br>
+        <input class="btn" type="button" value="Encriptar" id="btn-encriptar">
+        <input class="btn" type="button" value="Desencriptar" id="btn-desencriptar">
+      </form>
     </section>
-
+    
     <section class="msg box">
+     
       <h2>Mensaje Encriptado:</h2>
-      <textarea name="info-extra" id="" cols="50" rows="5" Placeholder="Aca se mostrara la traduccion."></textarea>
+      <textarea class="text-input-salida" name="text-input-salida" type="text" id="msg" id="" cols="50" rows="5" Placeholder="Aca se mostrara la traduccion."></textarea>
+      
       <br>
       <input class="btn" type="button" value="copiar" id="btn-copy">
     </section>
     
     
   </main>
+
+<script src="script.js"></script>
+<script src="Copiar-pegar.js"></script>
+
 </body>
 </html>
